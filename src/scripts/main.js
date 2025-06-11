@@ -9,6 +9,8 @@ li.forEach((image) => {
 
     const imageLink = im.target.closest('a');
 
-    mainImage.src = imageLink.href;
+    if (imageLink !== null){
+      mainImage.src = imageLink.href;
+    }
   });
 });
